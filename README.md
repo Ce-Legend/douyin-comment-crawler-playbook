@@ -56,7 +56,6 @@ python3 scripts/build_delivery_report.py examples/comments.sample.json --output 
 │   ├── 03-strategy-turning-points.md   # 几次关键转向
 │   ├── 04-quality-checklist.md         # 交付前检查什么
 │   ├── 05-delivery-template.md         # 交付说明模板
-│   ├── 06-github-discoverability.md    # GitHub 上怎么让别人搜到
 │   └── 07-ethics-and-compliance.md     # 合规和脱敏边界
 ├── examples/
 │   ├── input_models.sample.csv
@@ -215,28 +214,6 @@ python3 scripts/build_delivery_report.py examples/comments.sample.json --output 
 - 可直接滥用的大规模采集配置。
 
 详细边界见 [docs/07-ethics-and-compliance.md](docs/07-ethics-and-compliance.md)。
-
-## 🔎 GitHub 搜索小抄
-
-如果你也想把类似项目发出来，让别人搜“抖音爬虫”时能找到，可以看：
-
-[docs/06-github-discoverability.md](docs/06-github-discoverability.md)
-
-我给这个仓库用的 topic：
-
-```text
-douyin
-douyin-crawler
-douyin-comments
-comment-crawler
-web-scraping
-playwright
-data-collection
-social-media-analysis
-crawler-playbook
-data-delivery
-best-practices
-```
 
 ## 🙌 参考
 
