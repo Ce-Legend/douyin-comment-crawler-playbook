@@ -1,0 +1,14 @@
+.DS_Store
+*.zip
+*.log
+.env
+.env.*
+browser_profiles/
+cookies/
+raw/
+output/
+deliverables/
+__pycache__/
+*.pyc
+delivery_report.sample.md
+

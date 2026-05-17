@@ -1,0 +1,65 @@
+[
+  {
+    "model": "Sample Model A",
+    "stats": {
+      "validCommentCount": 3,
+      "videoCount": 2
+    },
+    "videos": [
+      {
+        "videoId": "video_001",
+        "title": "Sample Model A owner review after one week",
+        "videoUrl": "https://example.com/video/video_001",
+        "createTime": "2026-05-01 10:00:00",
+        "comments": [
+          {
+            "commentId": "comment_001",
+            "content": "The cabin is quiet, but the rear row feels small.",
+            "createTime": "2026-05-02 12:30:00"
+          },
+          {
+            "commentId": "comment_002",
+            "content": "I care more about charging speed than the screen.",
+            "createTime": "2026-05-02 12:35:00"
+          }
+        ]
+      },
+      {
+        "videoId": "video_002",
+        "title": "Sample Model A highway energy test",
+        "videoUrl": "https://example.com/video/video_002",
+        "createTime": "2026-05-03 09:00:00",
+        "comments": [
+          {
+            "commentId": "comment_003",
+            "content": "This range is acceptable for my daily commute.",
+            "createTime": "2026-05-03 15:20:00"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "model": "Sample Concept C",
+    "stats": {
+      "validCommentCount": 1,
+      "videoCount": 1
+    },
+    "videos": [
+      {
+        "videoId": "video_003",
+        "title": "Sample Concept C first look",
+        "videoUrl": "https://example.com/video/video_003",
+        "createTime": "2026-05-04 11:00:00",
+        "comments": [
+          {
+            "commentId": "comment_004",
+            "content": "Looks interesting, but I want to see the production version.",
+            "createTime": "2026-05-04 13:10:00"
+          }
+        ]
+      }
+    ]
+  }
+]
+
