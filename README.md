@@ -10,9 +10,9 @@
 
 ## 🌱 这个 repo 是什么
 
-前阵子做过一个抖音车型评论采集项目。
+这个 repo 来自一次抖音车型评论采集。
 
-一开始看起来很简单：给一批车型名，去抖音网页端搜评论，整理成 JSON。
+当时的需求很朴素：给一批车型名，去抖音网页端搜评论，整理成 JSON。
 
 真做起来才发现，真正麻烦的地方藏在这些环节：
 
@@ -22,7 +22,7 @@
 - 冷门车型采不到 1000 条，仍然可以合格交付，前提是把原因说清楚。
 - 最后交付不能只发一个 JSON，要有统计、低量说明、字段说明、校验结果。
 
-所以我把这次项目里真正有用的部分抽出来，做成这个 playbook。以后你做抖音评论采集、短视频评论采集、社媒评论分析，至少可以少踩几个坑。
+我把这次项目里真正有用的部分抽出来，做成这个 playbook。以后你做抖音评论采集、短视频评论采集、社媒评论分析，至少可以少踩几个坑。
 
 ## 🚀 先跑一下
 
@@ -198,22 +198,6 @@ python3 scripts/validate_output.py examples/comments.sample.json --start 2026-04
 ```bash
 python3 scripts/build_delivery_report.py examples/comments.sample.json --output delivery_report.sample.md --low-threshold 100
 ```
-
-## 🔒 开源时别放这些
-
-这个 repo 只放方法、模板和脱敏样例。
-
-不要把这些东西推上 GitHub：
-
-- 真实评论数据。
-- 客户原始 Excel。
-- 微信聊天记录。
-- cookie、账号、浏览器 profile。
-- 验证码截图。
-- `.env`、token、密钥。
-- 可直接滥用的大规模采集配置。
-
-详细边界见 [docs/07-ethics-and-compliance.md](docs/07-ethics-and-compliance.md)。
 
 ## 🙌 参考
 
