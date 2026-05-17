@@ -1,6 +1,6 @@
 # Douyin Comment Crawler Playbook
 
-> 抖音评论爬虫 / Douyin comment crawler 的一次真实项目复盘。一份踩坑地图：需求怎么问清楚、入口什么时候该换、低量数据怎么解释、最后怎么交付得让人能查。
+抖音评论爬虫 / Douyin comment crawler 的一次真实项目复盘。一份踩坑地图：需求怎么问清楚、入口什么时候该换、低量数据怎么解释、最后怎么交付得让人能查。
 
 ![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?logo=python&logoColor=white)
 ![License](https://img.shields.io/badge/license-MIT-green)
@@ -73,15 +73,15 @@ python3 scripts/build_delivery_report.py examples/comments.sample.json --output 
 
 但问题是：大量车型返回 0，连一些常识上应该有讨论量的热门车型也没有数据。
 
-这时候不要急着解释“平台上没有”。先停下来问一句：
+这时候别急着解释平台上没数据。先停下来确认一件事：
 
-> 是目标真的没数据，还是我的采集入口失真了？
+到底是目标真的没数据，还是我的采集入口失真了？
 
 这个问题救了后面一大截时间。
 
 ### 2. 入口比并发更重要
 
-我们后来放弃了盲目批量搜索，改成先复用已登录、肉眼确认过有内容的真实搜索页，再让脚本接管。
+我后来放弃了盲目批量搜索，改成先复用已登录、肉眼确认过有内容的真实搜索页，再让脚本接管。
 
 这个方案不酷，但更稳。
 
