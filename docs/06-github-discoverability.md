@@ -11,9 +11,9 @@ douyin-comment-crawler-playbook
 原因：
 
 - `douyin` 命中英文搜索。
-- `comment` 明确是评论，不是下载视频。
+- `comment` 明确是评论采集，避开视频下载方向。
 - `crawler` 命中爬虫搜索。
-- `playbook` 表示最佳实践和项目复盘，不是单纯脚本。
+- `playbook` 表示最佳实践和项目复盘，避免被理解成单一脚本。
 
 ## 推荐 Description
 
@@ -101,4 +101,3 @@ topic:douyin crawler
 - Description 是否写了中文核心词。
 - Topics 是否设置。
 - README 首屏是否包含目标关键词。
-
